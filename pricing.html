@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans - A One Car Rental</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Find the best car rental pricing plans in Indore, Madhya Pradesh. We offer competitive daily, weekly, and monthly rates for all our vehicles.">
+    <meta name="keywords" content="car rental prices indore, daily car rental rate indore, weekly car rental indore, monthly car hire indore, cheap car rental indore">
+    <link rel="canonical" href="https://your-website-url.com/pricing.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Pricing Plans - A One Car Rental">
+    <meta property="og:description" content="Transparent and affordable pricing for all your rental needs. Book a plan that suits you.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .accent-gold { color: #D4AF37; }
+        .bg-accent-gold { background-color: #D4AF37; }
+        .border-accent-gold { border-color: #D4AF37; }
+        .hover\:bg-accent-gold-dark:hover { background-color: #BF9B30; }
+        .modal-backdrop { transition: opacity 0.3s ease; }
+        .modal-content { transition: transform 0.3s ease; }
+    </style>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white antialiased">
+
+    <!-- Header -->
+    <header id="header" class="bg-gray-900 bg-opacity-80 backdrop-blur-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold accent-gold">🚗 A One Car</a>
+                </div>
+                <nav class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-gray-300 hover:accent-gold px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="cars.html" class="text-gray-300 hover:accent-gold px-3 py-2 rounded-md text-sm font-medium">Our Cars</a>
+                        <a href="pricing.html" class="accent-gold px-3 py-2 rounded-md text-sm font-medium border-b-2 border-accent-gold">Pricing</a>
+                        <a href="about.html" class="text-gray-300 hover:accent-gold px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="contact.html" class="text-gray-300 hover:accent-gold px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                        <a href="admin.html" class="text-gray-300 hover:accent-gold px-3 py-2 rounded-md text-sm font-medium">Admin</a>
+                    </div>
+                </nav>
+                <div class="-mr-2 flex md:hidden">
+                     <button type="button" id="mobile-menu-button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-300 hover:accent-gold block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="cars.html" class="text-gray-300 hover:accent-gold block px-3 py-2 rounded-md text-base font-medium">Our Cars</a>
+                <a href="pricing.html" class="accent-gold block px-3 py-2 rounded-md text-base font-medium">Pricing</a>
+                <a href="about.html" class="text-gray-300 hover:accent-gold block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="contact.html" class="text-gray-300 hover:accent-gold block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <a href="admin.html" class="text-gray-300 hover:accent-gold block px-3 py-2 rounded-md text-base font-medium">Admin</a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold">Transparent Pricing</h1>
+            <p class="text-gray-400 mt-2">No hidden fees. Choose the plan that's right for you.</p>
+        </div>
+
+        <!-- Pricing Table -->
+        <div class="overflow-x-auto bg-gray-800 rounded-lg shadow-lg">
+            <table class="min-w-full text-sm text-left text-gray-300">
+                <thead class="text-xs text-white uppercase bg-gray-700">
+                    <tr>
+                        <th scope="col" class="py-3 px-6">Vehicle</th>
+                        <th scope="col" class="py-3 px-6 text-center">Daily Rate</th>
+                        <th scope="col" class="py-3 px-6 text-center">Weekly Rate <span class="text-green-400 normal-case">(Save ~15%)</span></th>
+                        <th scope="col" class="py-3 px-6 text-center">Monthly Rate <span class="text-green-400 normal-case">(Save ~30%)</span></th>
+                        <th scope="col" class="py-3 px-6 text-center">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="pricing-table-body">
+                    <!-- Pricing rows will be injected here -->
+                    <tr>
+                        <td colspan="5" class="text-center py-16 px-6" id="loading-placeholder">
+                            <p class="text-gray-400 text-lg">Loading pricing information...</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="text-center mt-12">
+            <h2 class="text-3xl font-bold mb-4">Ready to Book?</h2>
+            <p class="text-gray-400 mb-6">Select a car from our fleet and start your journey.</p>
+            <a href="cars.html" class="bg-accent-gold text-gray-900 hover:bg-accent-gold-dark font-bold py-3 px-8 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105">
+                View All Cars
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 mt-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-sm">
+            <p>&copy; 2024 A One Car. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/916263814758" target="_blank" class="fixed bottom-5 right-5 bg-green-500 text-white p-3 rounded-full shadow-lg z-30 hover:bg-green-600 transition-transform transform hover:scale-110">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99 0-3.903-.52-5.614-1.486L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.269.655 4.398 1.803 6.12l-1.34 4.885 4.881-1.341z"/></svg>
+    </a>
+    
+    <!-- Firebase SDK -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        import { getFirestore, collection, getDocs, query, where } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
+        
+        const firebaseConfig = {
+          apiKey: "AIzaSyCxm4cOS2ca6SOIjDRP7eOGtJf2bkxpXfU",
+          authDomain: "carrentel-d902c.firebaseapp.com",
+          projectId: "carrentel-d902c",
+          storageBucket: "carrentel-d902c.firebasestorage.app",
+          messagingSenderId: "288985064825",
+          appId: "1:288985064825:web:ffbf376a647798cd133ba8"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        // --- DOM Elements ---
+        const pricingTableBody = document.getElementById('pricing-table-body');
+        const loadingPlaceholder = document.getElementById('loading-placeholder');
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // --- Mobile Menu Toggle ---
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // --- Fetch and Display Pricing ---
+        const fetchPricing = async () => {
+            try {
+                const carsRef = collection(db, 'cars');
+                const q = query(carsRef, where("active", "==", true));
+                const querySnapshot = await getDocs(q);
+                
+                if (querySnapshot.empty) {
+                    loadingPlaceholder.innerHTML = '<p class="text-gray-400">No pricing information available at the moment.</p>';
+                    return;
+                }
+                
+                pricingTableBody.innerHTML = ''; // Clear loading
+                querySnapshot.forEach((doc) => {
+                    const car = doc.data();
+                    const tableRow = `
+                        <tr class="bg-gray-800 border-b border-gray-700 hover:bg-gray-600">
+                            <td class="py-4 px-6 font-medium text-white whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <img src="${car.imageUrl}" alt="${car.name}" class="w-16 h-10 object-cover rounded-md mr-4" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/160x100/374151/FFFFFF?text=...';">
+                                    <div>
+                                        <div class="font-bold">${car.name}</div>
+                                        <div class="text-xs text-gray-400">${car.type} / ${car.seats} Seater</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">₹${car.pricePerDay.toLocaleString('en-IN')}</td>
+                            <td class="py-4 px-6 text-center font-semibold text-green-400">₹${car.pricePerWeek.toLocaleString('en-IN')}</td>
+                            <td class="py-4 px-6 text-center font-semibold text-green-400">₹${car.pricePerMonth.toLocaleString('en-IN')}</td>
+                            <td class="py-4 px-6 text-center">
+                                <a href="cars.html" class="font-medium text-accent-gold hover:underline">Book</a>
+                            </td>
+                        </tr>
+                    `;
+                    pricingTableBody.innerHTML += tableRow;
+                });
+
+            } catch (error) {
+                console.error("Error fetching pricing: ", error);
+                loadingPlaceholder.innerHTML = '<p class="text-red-400">Could not load pricing. Please try again later.</p>';
+            }
+        };
+
+        // --- Initial Load ---
+        document.addEventListener('DOMContentLoaded', fetchPricing);
+    </script>
+</body>
+</html>
