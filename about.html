@@ -83,7 +83,51 @@
         }
 
         @media (max-width: 768px) {
-            .hero-about { background-attachment: scroll; }
+            .hero-about { 
+                background-attachment: scroll;
+                padding: 4rem 0;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .category-title {
+                font-size: 1.5rem;
+            }
+            
+            .stat-number {
+                font-size: 2.5rem;
+            }
+            
+            .timeline-item {
+                padding-left: 2rem;
+            }
+            
+            .timeline-item::before {
+                left: 0;
+                width: 2px;
+            }
+            
+            .timeline-item::after {
+                left: -5px;
+                width: 12px;
+                height: 12px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .category-title {
+                font-size: 1.3rem;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
@@ -136,159 +180,159 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-about text-white py-32">
+    <section class="hero-about text-white py-16 sm:py-24 md:py-32">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-5xl md:text-7xl font-black mb-6" data-aos="fade-up">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black mb-4 sm:mb-6" data-aos="fade-up">
                 About <span class="text-gradient">A One Car</span>
             </h1>
-            <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+            <p class="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
                 Your Journey, Our Commitment.
             </p>
         </div>
     </section>
         
     <!-- Our Story -->
-    <section class="py-24 bg-gray-900">
+    <section class="py-12 sm:py-16 md:py-24 bg-gray-900">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
                 <div data-aos="fade-right">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-8">Our <span class="text-gradient">Story</span></h2>
-                    <div class="space-y-6 text-lg text-gray-300 leading-relaxed">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8">Our <span class="text-gradient">Story</span></h2>
+                    <div class="space-y-4 sm:space-y-6 text-base sm:text-lg text-gray-300 leading-relaxed">
                         <p>Founded in 2018, A One Car started with a simple vision: to make premium and reliable car rentals accessible to everyone in Indore and surrounding areas of Madhya Pradesh.</p>
                         <p>We saw a need for a service that wasn't just about providing a car, but about delivering a complete, hassle-free travel experience that puts customer satisfaction at the heart of everything we do.</p>
                         <p>From a small fleet of just five cars, we've grown into a trusted name with a diverse range of vehicles, catering to thousands of satisfied customers across the region.</p>
                     </div>
                 </div>
-                <div data-aos="fade-left">
+                <div data-aos="fade-left" class="order-first lg:order-last">
                     <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1169&q=80" 
-                         alt="Our Team" class="rounded-3xl shadow-2xl w-full">
+                         alt="Our Team" class="rounded-2xl sm:rounded-3xl shadow-2xl w-full">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Mission & Vision -->
-    <section class="py-24 bg-gray-800">
+    <section class="py-12 sm:py-16 md:py-24 bg-gray-800">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">Our <span class="text-gradient">Mission</span></h2>
-                <p class="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+            <div class="text-center mb-12 sm:mb-16" data-aos="fade-up">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Our <span class="text-gradient">Mission</span></h2>
+                <p class="text-base sm:text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
                     To be the most trusted and customer-centric car rental service in our region, by providing a fleet of safe, clean, and well-maintained vehicles, backed by exceptional 24/7 support and simple, transparent pricing.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div class="card-enhanced p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="100">
-                    <svg class="w-16 h-16 mx-auto mb-6 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
+                <div class="card-enhanced p-6 sm:p-8 rounded-2xl sm:rounded-3xl text-center" data-aos="fade-up" data-aos-delay="100">
+                    <svg class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4 sm:mb-6 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10Z"/>
                     </svg>
-                    <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
-                    <p class="text-gray-300 leading-relaxed">To revolutionize the car rental experience by making premium vehicles accessible to everyone, while maintaining the highest standards of service and customer satisfaction.</p>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Our Vision</h3>
+                    <p class="text-sm sm:text-base text-gray-300 leading-relaxed">To revolutionize the car rental experience by making premium vehicles accessible to everyone, while maintaining the highest standards of service and customer satisfaction.</p>
                 </div>
-                <div class="card-enhanced p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="200">
-                    <svg class="w-16 h-16 mx-auto mb-6 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                <div class="card-enhanced p-6 sm:p-8 rounded-2xl sm:rounded-3xl text-center" data-aos="fade-up" data-aos-delay="200">
+                    <svg class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4 sm:mb-6 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z"/>
                     </svg>
-                    <h3 class="text-2xl font-bold mb-4">Our Values</h3>
-                    <p class="text-gray-300 leading-relaxed">Integrity, reliability, and customer-first approach guide everything we do. We believe in building long-term relationships based on trust and exceptional service quality.</p>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Our Values</h3>
+                    <p class="text-sm sm:text-base text-gray-300 leading-relaxed">Integrity, reliability, and customer-first approach guide everything we do. We believe in building long-term relationships based on trust and exceptional service quality.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Service Areas -->
-    <section class="py-24 bg-gray-900">
+    <section class="py-12 sm:py-16 md:py-24 bg-gray-900">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">Our <span class="text-gradient">Service Areas</span></h2>
-            <p class="text-xl text-gray-300 mb-16" data-aos="fade-up" data-aos-delay="100">Serving customers across major cities and regions</p>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" data-aos="fade-up">Our <span class="text-gradient">Service Areas</span></h2>
+            <p class="text-base sm:text-lg md:text-xl text-gray-300 mb-12 sm:mb-16" data-aos="fade-up" data-aos-delay="100">Serving customers across major cities and regions</p>
             
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="card-enhanced p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="100">
-                    <svg class="w-12 h-12 mx-auto mb-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+                <div class="card-enhanced p-4 sm:p-6 rounded-xl sm:rounded-2xl" data-aos="zoom-in" data-aos-delay="100">
+                    <svg class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto mb-3 sm:mb-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
                     </svg>
-                    <h3 class="text-xl font-bold">Indore</h3>
+                    <h3 class="text-base sm:text-lg md:text-xl font-bold">Indore</h3>
                 </div>
-                <div class="card-enhanced p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="200">
-                    <svg class="w-12 h-12 mx-auto mb-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                <div class="card-enhanced p-4 sm:p-6 rounded-xl sm:rounded-2xl" data-aos="zoom-in" data-aos-delay="200">
+                    <svg class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto mb-3 sm:mb-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M15,21H9V13.5H15V21M12,2L17.5,7.5H16V10.5H8V7.5H6.5L12,2Z"/>
                     </svg>
-                    <h3 class="text-xl font-bold">Ujjain</h3>
+                    <h3 class="text-base sm:text-lg md:text-xl font-bold">Ujjain</h3>
                 </div>
-                <div class="card-enhanced p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="300">
-                    <svg class="w-12 h-12 mx-auto mb-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                <div class="card-enhanced p-4 sm:p-6 rounded-xl sm:rounded-2xl" data-aos="zoom-in" data-aos-delay="300">
+                    <svg class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto mb-3 sm:mb-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12,3L2,12H5V20H19V12H22L12,3M12,8.75A2.25,2.25 0 0,1 14.25,11A2.25,2.25 0 0,1 12,13.25A2.25,2.25 0 0,1 9.75,11A2.25,2.25 0 0,1 12,8.75Z"/>
                     </svg>
-                    <h3 class="text-xl font-bold">Dewas</h3>
+                    <h3 class="text-base sm:text-lg md:text-xl font-bold">Dewas</h3>
                 </div>
-                <div class="card-enhanced p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="400">
-                    <svg class="w-12 h-12 mx-auto mb-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                <div class="card-enhanced p-4 sm:p-6 rounded-xl sm:rounded-2xl" data-aos="zoom-in" data-aos-delay="400">
+                    <svg class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto mb-3 sm:mb-4 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5H6.5C5.84 5 5.28 5.42 5.08 6.01L3 12V20C3 20.55 3.45 21 4 21H5C5.55 21 6 20.55 6 20V19H18V20C18 20.55 18.45 21 19 21H20C20.55 21 21 20.55 21 20V12L18.92 6.01Z"/>
                     </svg>
-                    <h3 class="text-xl font-bold">Bhopal</h3>
+                    <h3 class="text-base sm:text-lg md:text-xl font-bold">Bhopal</h3>
                 </div>
             </div>
         </div>
     </section>
     
     <!-- Stats Section -->
-    <section class="py-24 bg-gray-800">
+    <section class="py-12 sm:py-16 md:py-24 bg-gray-800">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div class="card-enhanced p-8 rounded-2xl" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="text-4xl font-black text-gradient mb-2" data-count="5">0</div>
-                    <p class="text-gray-300 font-semibold">Years of Service</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 text-center">
+                <div class="card-enhanced p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="text-2xl sm:text-3xl md:text-4xl font-black text-gradient mb-2" data-count="5">0</div>
+                    <p class="text-xs sm:text-sm md:text-base text-gray-300 font-semibold">Years of Service</p>
                 </div>
-                <div class="card-enhanced p-8 rounded-2xl" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="text-4xl font-black text-gradient mb-2" data-count="50">0</div>
-                    <p class="text-gray-300 font-semibold">Premium Vehicles</p>
+                <div class="card-enhanced p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="text-2xl sm:text-3xl md:text-4xl font-black text-gradient mb-2" data-count="50">0</div>
+                    <p class="text-xs sm:text-sm md:text-base text-gray-300 font-semibold">Premium Vehicles</p>
                 </div>
-                <div class="card-enhanced p-8 rounded-2xl" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="text-4xl font-black text-gradient mb-2" data-count="500">0</div>
-                    <p class="text-gray-300 font-semibold">Happy Customers</p>
+                <div class="card-enhanced p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="text-2xl sm:text-3xl md:text-4xl font-black text-gradient mb-2" data-count="500">0</div>
+                    <p class="text-xs sm:text-sm md:text-base text-gray-300 font-semibold">Happy Customers</p>
                 </div>
-                <div class="card-enhanced p-8 rounded-2xl" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="text-4xl font-black text-gradient mb-2">24/7</div>
-                    <p class="text-gray-300 font-semibold">Customer Support</p>
+                <div class="card-enhanced p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="text-2xl sm:text-3xl md:text-4xl font-black text-gradient mb-2">24/7</div>
+                    <p class="text-xs sm:text-sm md:text-base text-gray-300 font-semibold">Customer Support</p>
                 </div>
             </div>
         </div>
     </section>
     
     <!-- Timeline -->
-    <section class="py-24 bg-gray-900">
+    <section class="py-12 sm:py-16 md:py-24 bg-gray-900">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">Our <span class="text-gradient">Journey</span></h2>
-                <p class="text-xl text-gray-300">Milestones that shaped our success</p>
+            <div class="text-center mb-12 sm:mb-16" data-aos="fade-up">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Our <span class="text-gradient">Journey</span></h2>
+                <p class="text-base sm:text-lg md:text-xl text-gray-300">Milestones that shaped our success</p>
             </div>
             
             <div class="max-w-4xl mx-auto">
-                <div class="timeline-item mb-12" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-enhanced p-8 rounded-2xl">
-                        <h3 class="text-2xl font-bold text-gradient mb-2">2018 - The Beginning</h3>
-                        <p class="text-gray-300">Started with 5 cars and a vision to provide premium car rental services in Indore and surrounding areas.</p>
+                <div class="timeline-item mb-8 sm:mb-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-enhanced p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl">
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gradient mb-2">2018 - The Beginning</h3>
+                        <p class="text-sm sm:text-base text-gray-300">Started with 5 cars and a vision to provide premium car rental services in Indore and surrounding areas.</p>
                     </div>
                 </div>
                 
-                <div class="timeline-item mb-12" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-enhanced p-8 rounded-2xl">
-                        <h3 class="text-2xl font-bold text-gradient mb-2">2020 - Expansion</h3>
-                        <p class="text-gray-300">Expanded our fleet to 25 vehicles and extended services to Ujjain, Dewas and Bhopal region.</p>
+                <div class="timeline-item mb-8 sm:mb-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-enhanced p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl">
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gradient mb-2">2020 - Expansion</h3>
+                        <p class="text-sm sm:text-base text-gray-300">Expanded our fleet to 25 vehicles and extended services to Ujjain, Dewas and Bhopal region.</p>
                     </div>
                 </div>
                 
-                <div class="timeline-item mb-12" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card-enhanced p-8 rounded-2xl">
-                        <h3 class="text-2xl font-bold text-gradient mb-2">2022 - Digital Transformation</h3>
-                        <p class="text-gray-300">Launched our online booking platform and mobile app for seamless customer experience.</p>
+                <div class="timeline-item mb-8 sm:mb-12" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-enhanced p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl">
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gradient mb-2">2022 - Digital Transformation</h3>
+                        <p class="text-sm sm:text-base text-gray-300">Launched our online booking platform and mobile app for seamless customer experience.</p>
                     </div>
                 </div>
                 
                 <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card-enhanced p-8 rounded-2xl">
-                        <h3 class="text-2xl font-bold text-gradient mb-2">2024 - Premium Fleet</h3>
-                        <p class="text-gray-300">Now serving with 50+ premium vehicles and 500+ satisfied customers across the region.</p>
+                    <div class="card-enhanced p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl">
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gradient mb-2">2024 - Premium Fleet</h3>
+                        <p class="text-sm sm:text-base text-gray-300">Now serving with 50+ premium vehicles and 500+ satisfied customers across the region.</p>
                     </div>
                 </div>
             </div>
@@ -296,36 +340,36 @@
     </section>
 
     <!-- Team Section -->
-    <section class="py-24 bg-gray-800">
+    <section class="py-12 sm:py-16 md:py-24 bg-gray-800">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">Meet The <span class="text-gradient">Team</span></h2>
-                <p class="text-xl text-gray-300">The driving force behind your perfect rental experience</p>
+            <div class="text-center mb-12 sm:mb-16" data-aos="fade-up">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Meet The <span class="text-gradient">Team</span></h2>
+                <p class="text-base sm:text-lg md:text-xl text-gray-300">The driving force behind your perfect rental experience</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="card-enhanced p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                <div class="card-enhanced p-6 sm:p-8 rounded-2xl sm:rounded-3xl text-center" data-aos="fade-up" data-aos-delay="100">
                     <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" 
-                         alt="CEO" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover">
-                    <h3 class="text-2xl font-bold mb-2">Mr. Ramesh Kumar</h3>
-                    <p class="text-gradient font-semibold mb-4">Founder & CEO</p>
-                    <p class="text-gray-300">Visionary leader with 15+ years in automotive industry, driving innovation and customer satisfaction.</p>
+                         alt="CEO" class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mx-auto rounded-full mb-4 sm:mb-6 object-cover">
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold mb-2">Mr. Ramesh Kumar</h3>
+                    <p class="text-gradient font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Founder & CEO</p>
+                    <p class="text-sm sm:text-base text-gray-300">Visionary leader with 15+ years in automotive industry, driving innovation and customer satisfaction.</p>
                 </div>
                 
-                <div class="card-enhanced p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-enhanced p-6 sm:p-8 rounded-2xl sm:rounded-3xl text-center" data-aos="fade-up" data-aos-delay="200">
                     <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face" 
-                         alt="Operations Manager" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover">
-                    <h3 class="text-2xl font-bold mb-2">Ms. Sunita Singh</h3>
-                    <p class="text-gradient font-semibold mb-4">Operations Manager</p>
-                    <p class="text-gray-300">Expert in fleet management and operations, ensuring smooth service delivery across all locations.</p>
+                         alt="Operations Manager" class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mx-auto rounded-full mb-4 sm:mb-6 object-cover">
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold mb-2">Ms. Sunita Singh</h3>
+                    <p class="text-gradient font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Operations Manager</p>
+                    <p class="text-sm sm:text-base text-gray-300">Expert in fleet management and operations, ensuring smooth service delivery across all locations.</p>
                 </div>
                 
-                <div class="card-enhanced p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-enhanced p-6 sm:p-8 rounded-2xl sm:rounded-3xl text-center" data-aos="fade-up" data-aos-delay="300">
                     <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face" 
-                         alt="Customer Support Head" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover">
-                    <h3 class="text-2xl font-bold mb-2">Mr. Vijay Sharma</h3>
-                    <p class="text-gradient font-semibold mb-4">Head of Customer Support</p>
-                    <p class="text-gray-300">Dedicated to providing exceptional customer service and support, available 24/7 for our clients.</p>
+                         alt="Customer Support Head" class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mx-auto rounded-full mb-4 sm:mb-6 object-cover">
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold mb-2">Mr. Vijay Sharma</h3>
+                    <p class="text-gradient font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Head of Customer Support</p>
+                    <p class="text-sm sm:text-base text-gray-300">Dedicated to providing exceptional customer service and support, available 24/7 for our clients.</p>
                 </div>
             </div>
         </div>

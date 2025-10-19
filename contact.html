@@ -100,7 +100,28 @@
         }
 
         @media (max-width: 768px) {
-            .hero-contact { background-attachment: scroll; }
+            .hero-contact { 
+                background-attachment: scroll;
+                padding: 4rem 0;
+            }
+            
+            .contact-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+            
+            .modal-content {
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .contact-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
@@ -153,67 +174,67 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-contact text-white py-32">
+    <section class="hero-contact text-white py-16 sm:py-24 md:py-32">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-5xl md:text-7xl font-black mb-6" data-aos="fade-up">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black mb-4 sm:mb-6" data-aos="fade-up">
                 Get In <span class="text-gradient">Touch</span>
             </h1>
-            <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+            <p class="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
                 We're here to help. Contact us anytime for bookings or support.
             </p>
         </div>
     </section>
 
     <!-- Contact Info Cards -->
-    <section class="py-20 bg-gray-800">
+    <section class="py-12 sm:py-16 md:py-20 bg-gray-800">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="card-enhanced p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                <div class="card-enhanced p-6 sm:p-8 rounded-2xl sm:rounded-3xl text-center" data-aos="fade-up" data-aos-delay="100">
                     <div class="contact-icon mx-auto text-gray-900">
-                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Visit Us</h3>
-                    <p class="text-gray-300 mb-4">Vijay Nagar, Indore<br>Madhya Pradesh 452010</p>
-                    <a href="https://maps.google.com" target="_blank" class="text-yellow-400 hover:text-yellow-300 font-semibold">Get Directions</a>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4">Visit Us</h3>
+                    <p class="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4">Vijay Nagar, Indore<br>Madhya Pradesh 452010</p>
+                    <a href="https://maps.google.com" target="_blank" class="text-yellow-400 hover:text-yellow-300 font-semibold text-sm sm:text-base">Get Directions</a>
                 </div>
                 
-                <div class="card-enhanced p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-enhanced p-6 sm:p-8 rounded-2xl sm:rounded-3xl text-center" data-aos="fade-up" data-aos-delay="200">
                     <div class="contact-icon mx-auto text-gray-900">
-                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Call Us</h3>
-                    <p class="text-gray-300 mb-4">Available 24/7 for<br>your convenience</p>
-                    <a href="tel:+916263814758" class="text-yellow-400 hover:text-yellow-300 font-semibold text-xl">+91 6263814758</a>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4">Call Us</h3>
+                    <p class="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4">Available 24/7 for<br>your convenience</p>
+                    <a href="tel:+916263814758" class="text-yellow-400 hover:text-yellow-300 font-semibold text-lg sm:text-xl">+91 6263814758</a>
                 </div>
                 
-                <div class="card-enhanced p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-enhanced p-6 sm:p-8 rounded-2xl sm:rounded-3xl text-center" data-aos="fade-up" data-aos-delay="300">
                     <div class="contact-icon mx-auto text-gray-900">
-                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Email Us</h3>
-                    <p class="text-gray-300 mb-4">Quick response within<br>24 hours</p>
-                    <a href="mailto:contact@aonecar.com" class="text-yellow-400 hover:text-yellow-300 font-semibold">contact@aonecar.com</a>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4">Email Us</h3>
+                    <p class="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4">Quick response within<br>24 hours</p>
+                    <a href="mailto:contact@aonecar.com" class="text-yellow-400 hover:text-yellow-300 font-semibold text-sm sm:text-base break-all">contact@aonecar.com</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Form & Map -->
-    <section class="py-20 bg-gray-900">
+    <section class="py-12 sm:py-16 md:py-20 bg-gray-900">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
                 <!-- Contact Form -->
                 <div data-aos="fade-right">
-                    <div class="card-enhanced p-8 rounded-3xl">
-                        <h2 class="text-3xl font-bold text-gradient mb-8">Send us a Message</h2>
-                        <form id="contact-form" class="space-y-6">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="card-enhanced p-6 sm:p-8 rounded-2xl sm:rounded-3xl">
+                        <h2 class="text-2xl sm:text-3xl font-bold text-gradient mb-6 sm:mb-8">Send us a Message</h2>
+                        <form id="contact-form" class="space-y-4 sm:space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                                 <div>
                                     <label class="block text-sm font-medium text-gray-300 mb-2">Full Name</label>
                                     <input type="text" id="name" required class="form-input w-full py-3 px-4 rounded-xl">
@@ -242,24 +263,25 @@
                             
                             <div>
                                 <label class="block text-sm font-medium text-gray-300 mb-2">Message</label>
-                                <textarea id="message" rows="5" required class="form-input w-full py-3 px-4 rounded-xl resize-none"></textarea>
+                                <textarea id="message" rows="4" required class="form-input w-full py-3 px-4 rounded-xl resize-none"></textarea>
                             </div>
                             
-                            <button type="submit" id="submit-btn" class="btn-primary w-full py-4 rounded-full font-bold text-lg">
+                            <button type="submit" id="submit-btn" class="btn-primary w-full py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg">
                                 Send Message
                             </button>
                         </form>
-                        <div id="form-message" class="mt-6 text-center"></div>
+                        <div id="form-message" class="mt-4 sm:mt-6 text-center"></div>
                     </div>
                 </div>
 
                 <!-- Map & Additional Info -->
-                <div data-aos="fade-left">
-                    <div class="card-enhanced rounded-3xl overflow-hidden mb-8">
+                <div data-aos="fade-left" class="order-first lg:order-last">
+                    <div class="card-enhanced rounded-2xl sm:rounded-3xl overflow-hidden mb-6 sm:mb-8">
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58509.81414586!2d75.8577!3d22.7196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fcad1b410ddb%3A0x96ec4da356240f4!2sIndore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1672922137515!5m2!1sen!2sin" 
                             width="100%" 
-                            height="400" 
+                            height="300" 
+                            class="sm:h-96 md:h-80 lg:h-96" 
                             style="border:0;" 
                             allowfullscreen="" 
                             loading="lazy" 
@@ -268,32 +290,32 @@
                     </div>
                     
                     <!-- Business Hours -->
-                    <div class="card-enhanced p-8 rounded-3xl">
-                        <h3 class="text-2xl font-bold text-gradient mb-6">Business Hours</h3>
-                        <div class="space-y-4">
-                            <div class="flex justify-between items-center">
+                    <div class="card-enhanced p-6 sm:p-8 rounded-2xl sm:rounded-3xl">
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gradient mb-4 sm:mb-6">Business Hours</h3>
+                        <div class="space-y-3 sm:space-y-4">
+                            <div class="flex justify-between items-center text-sm sm:text-base">
                                 <span class="text-gray-300">Monday - Friday</span>
                                 <span class="font-semibold">24/7 Available</span>
                             </div>
-                            <div class="flex justify-between items-center">
+                            <div class="flex justify-between items-center text-sm sm:text-base">
                                 <span class="text-gray-300">Saturday - Sunday</span>
                                 <span class="font-semibold">24/7 Available</span>
                             </div>
-                            <div class="flex justify-between items-center">
+                            <div class="flex justify-between items-center text-sm sm:text-base">
                                 <span class="text-gray-300">Emergency Support</span>
                                 <span class="font-semibold text-green-400">Always Open</span>
                             </div>
                         </div>
                         
-                        <div class="mt-8 pt-6 border-t border-gray-700">
-                            <h4 class="text-lg font-bold mb-4">Quick Actions</h4>
-                            <div class="grid grid-cols-2 gap-4">
+                        <div class="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-gray-700">
+                            <h4 class="text-base sm:text-lg font-bold mb-3 sm:mb-4">Quick Actions</h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                                 <a href="https://wa.me/916263814758" target="_blank" 
-                                   class="bg-green-600 hover:bg-green-700 text-white py-3 px-4 rounded-xl font-semibold text-center transition-colors">
+                                   class="bg-green-600 hover:bg-green-700 text-white py-2 sm:py-3 px-3 sm:px-4 rounded-xl font-semibold text-center transition-colors text-sm sm:text-base">
                                     WhatsApp
                                 </a>
                                 <a href="tel:+916263814758" 
-                                   class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-xl font-semibold text-center transition-colors">
+                                   class="bg-blue-600 hover:bg-blue-700 text-white py-2 sm:py-3 px-3 sm:px-4 rounded-xl font-semibold text-center transition-colors text-sm sm:text-base">
                                     Call Now
                                 </a>
                             </div>
@@ -305,59 +327,59 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-20 bg-gray-800">
+    <section class="py-12 sm:py-16 md:py-20 bg-gray-800">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">Frequently Asked <span class="text-gradient">Questions</span></h2>
-                <p class="text-xl text-gray-300">Quick answers to common questions</p>
+            <div class="text-center mb-12 sm:mb-16" data-aos="fade-up">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Frequently Asked <span class="text-gradient">Questions</span></h2>
+                <p class="text-base sm:text-lg md:text-xl text-gray-300">Quick answers to common questions</p>
             </div>
             
-            <div class="max-w-4xl mx-auto space-y-6">
-                <div class="card-enhanced rounded-2xl" data-aos="fade-up" data-aos-delay="100">
-                    <button class="faq-toggle w-full p-6 text-left flex justify-between items-center">
-                        <span class="text-lg font-semibold">How do I book a car?</span>
-                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="max-w-4xl mx-auto space-y-4 sm:space-y-6">
+                <div class="card-enhanced rounded-xl sm:rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-toggle w-full p-4 sm:p-6 text-left flex justify-between items-center">
+                        <span class="text-base sm:text-lg font-semibold pr-4">How do I book a car?</span>
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6 transform transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
-                    <div class="faq-content hidden px-6 pb-6">
-                        <p class="text-gray-300">You can book a car through our website, mobile app, or by calling us directly. Simply select your preferred vehicle, choose dates, and complete the booking process.</p>
+                    <div class="faq-content hidden px-4 sm:px-6 pb-4 sm:pb-6">
+                        <p class="text-sm sm:text-base text-gray-300">You can book a car through our website, mobile app, or by calling us directly. Simply select your preferred vehicle, choose dates, and complete the booking process.</p>
                     </div>
                 </div>
                 
-                <div class="card-enhanced rounded-2xl" data-aos="fade-up" data-aos-delay="200">
-                    <button class="faq-toggle w-full p-6 text-left flex justify-between items-center">
-                        <span class="text-lg font-semibold">What documents do I need?</span>
-                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="card-enhanced rounded-xl sm:rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <button class="faq-toggle w-full p-4 sm:p-6 text-left flex justify-between items-center">
+                        <span class="text-base sm:text-lg font-semibold pr-4">What documents do I need?</span>
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6 transform transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
-                    <div class="faq-content hidden px-6 pb-6">
-                        <p class="text-gray-300">You need a valid driving license, Aadhaar card, and a security deposit. For corporate bookings, additional documents may be required.</p>
+                    <div class="faq-content hidden px-4 sm:px-6 pb-4 sm:pb-6">
+                        <p class="text-sm sm:text-base text-gray-300">You need a valid driving license, Aadhaar card, and a security deposit. For corporate bookings, additional documents may be required.</p>
                     </div>
                 </div>
                 
-                <div class="card-enhanced rounded-2xl" data-aos="fade-up" data-aos-delay="300">
-                    <button class="faq-toggle w-full p-6 text-left flex justify-between items-center">
-                        <span class="text-lg font-semibold">Is fuel included in the rental?</span>
-                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="card-enhanced rounded-xl sm:rounded-2xl" data-aos="fade-up" data-aos-delay="300">
+                    <button class="faq-toggle w-full p-4 sm:p-6 text-left flex justify-between items-center">
+                        <span class="text-base sm:text-lg font-semibold pr-4">Is fuel included in the rental?</span>
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6 transform transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
-                    <div class="faq-content hidden px-6 pb-6">
-                        <p class="text-gray-300">Fuel is not included in the rental price. You'll receive the car with a full tank and should return it with the same fuel level.</p>
+                    <div class="faq-content hidden px-4 sm:px-6 pb-4 sm:pb-6">
+                        <p class="text-sm sm:text-base text-gray-300">Fuel is not included in the rental price. You'll receive the car with a full tank and should return it with the same fuel level.</p>
                     </div>
                 </div>
                 
-                <div class="card-enhanced rounded-2xl" data-aos="fade-up" data-aos-delay="400">
-                    <button class="faq-toggle w-full p-6 text-left flex justify-between items-center">
-                        <span class="text-lg font-semibold">Can I cancel my booking?</span>
-                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="card-enhanced rounded-xl sm:rounded-2xl" data-aos="fade-up" data-aos-delay="400">
+                    <button class="faq-toggle w-full p-4 sm:p-6 text-left flex justify-between items-center">
+                        <span class="text-base sm:text-lg font-semibold pr-4">Can I cancel my booking?</span>
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6 transform transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
-                    <div class="faq-content hidden px-6 pb-6">
-                        <p class="text-gray-300">Yes, you can cancel your booking up to 24 hours before the pickup time for a full refund. Cancellations within 24 hours may incur charges.</p>
+                    <div class="faq-content hidden px-4 sm:px-6 pb-4 sm:pb-6">
+                        <p class="text-sm sm:text-base text-gray-300">Yes, you can cancel your booking up to 24 hours before the pickup time for a full refund. Cancellations within 24 hours may incur charges.</p>
                     </div>
                 </div>
             </div>
